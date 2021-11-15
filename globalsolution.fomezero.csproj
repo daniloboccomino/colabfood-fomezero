@@ -22,10 +22,16 @@
     <None Remove="Pomelo.EntityFrameworkCore.MySql" />
     <None Remove="Microsoft.EntityFrameworkCore.Tools" />
     <None Remove="Views\Provider\" />
+    <None Remove="Views\Advertising\" />
+    <None Remove="Views\Charity\" />
+    <None Remove="Views\Donation\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Repositories\" />
     <Folder Include="Persistence\" />
     <Folder Include="Views\Provider\" />
+    <Folder Include="Views\Advertising\" />
+    <Folder Include="Views\Charity\" />
+    <Folder Include="Views\Donation\" />
   </ItemGroup>
 </Project>

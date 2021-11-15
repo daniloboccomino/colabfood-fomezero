@@ -25,7 +25,7 @@ namespace globalsolution.fomezero.Models
         public string Address { get; set; }
         [Display(Name = "Cidade")]
         public string City { get; set; }
-        public UF UF { get; set; }
+        public string UF { get; set; }
         [Display(Name = "País")]
         public string Country { get; set; }
         [Display(Name = "Anúncios")]
