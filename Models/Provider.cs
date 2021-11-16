@@ -19,8 +19,6 @@ namespace globalsolution.fomezero.Models
         public string Password { get; set; }
         [Display(Name = "Telefone")]
         public string Phone { get; set; }
-        [Display(Name = "Tipo")]
-        public UserType Type { get; set; }
         [Display(Name = "Endereço")]
         public string Address { get; set; }
         [Display(Name = "Cidade")]
