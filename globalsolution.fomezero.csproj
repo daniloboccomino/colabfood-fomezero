@@ -25,6 +25,7 @@
     <None Remove="Views\Advertising\" />
     <None Remove="Views\Charity\" />
     <None Remove="Views\Donation\" />
+    <None Remove="TagHelpers\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Repositories\" />
@@ -33,5 +34,6 @@
     <Folder Include="Views\Advertising\" />
     <Folder Include="Views\Charity\" />
     <Folder Include="Views\Donation\" />
+    <Folder Include="TagHelpers\" />
   </ItemGroup>
 </Project>
