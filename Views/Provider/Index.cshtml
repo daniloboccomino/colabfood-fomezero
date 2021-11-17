@@ -4,43 +4,42 @@
     ViewData["Title"] = "Perfil";
 }
 
+<message text="@TempData["msg"]"></message>
+
 <div class="card mb-3" style="max-width: 30rem;">
     <h4 class="card-header">Dados de Cadastro</h4>
     <div class="card-body">
-        <form asp-action="">
-            <input asp-for="ProviderId" />
-            <div class="form-group mt-4">
-                <label asp-for="Document"></label>
-                <input asp-for="Document" class="form-control-plaintext" readonly value="" />
-            </div>
-            <div class="form-group mt-4">
-                <label asp-for="Name"></label>
-                <input asp-for="Name" class="form-control-plaintext" readonly value="" />
-            </div>
-            <div class="form-group mt-4">
-                <label asp-for="Email"></label>
-                <input asp-for="Email" class="form-control-plaintext" readonly value="" />
-            </div>
-            <div class="form-group mt-4">
-                <label asp-for="Phone"></label>
-                <input asp-for="Phone" class="form-control-plaintext" readonly value="" />
-            </div>
-            <div class="form-group mt-4">
-                <label asp-for="Address"></label>
-                <input asp-for="Address" class="form-control-plaintext" readonly value="" />
-            </div>
-            <div class="form-group mt-4">
-                <label asp-for="City"></label>
-                <input asp-for="City" class="form-control-plaintext" readonly value="" />
-            </div>
-            <div class="form-group mt-4">
-                <label asp-for="UF"></label>
-                <input asp-for="UF" class="form-control-plaintext" readonly value="" />
-            </div>
-            <div class="form-group mt-4 mb-1">
-                <label asp-for="Country"></label>
-                <input asp-for="Country" class="form-control-plaintext" readonly value="" />
-            </div>
-        </form>
+        <div class="form-group mt-4">
+            <p class="user-label">No. Documento</p>
+            <p class="user-txt-value">@Model.Document</p>
+        </div>
+        <div class="form-group mt-4">
+            <p class="user-label">Nome</p>
+            <p class="user-txt-value">@Model.Name</p>
+        </div>
+        <div class="form-group mt-4">
+            <p class="user-label">E-mail</p>
+            <p class="user-txt-value">@Model.Email</p>
+        </div>
+        <div class="form-group mt-4">
+            <p class="user-label">Telefone</p>
+            <p class="user-txt-value">@Model.Phone</p>
+        </div>
+        <div class="form-group mt-4">
+            <p class="user-label">Endereço</p>
+            <p class="user-txt-value">@Model.Address</p>
+        </div>
+        <div class="form-group mt-4">
+            <p class="user-label">Cidade</p>
+            <p class="user-txt-value">@Model.City</p>
+        </div>
+        <div class="form-group mt-4">
+            <p class="user-label" h6>Estado</p>
+            <p class="user-txt-value">@Model.UF</p>
+        </div>
+        <div class="form-group mt-4">
+            <p class="user-label">País</p>
+            <p class="user-txt-value">@Model.Country</p>
+        </div>
     </div>
 </div>

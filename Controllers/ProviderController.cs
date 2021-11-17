@@ -14,9 +14,9 @@ namespace globalsolution.fomezero.Controllers
             _providerRepository = providerRepository;
         }
 
-        public IActionResult Index(int id)
+        public IActionResult Index(Provider provider)
         {
-            return View(_providerRepository.FindById(id));
+            return View(_providerRepository.FindById(provider.ProviderId));
         }
 
         [HttpGet]
@@ -31,7 +31,7 @@ namespace globalsolution.fomezero.Controllers
             _providerRepository.Create(provider);
             _providerRepository.Save();
             TempData["msg"] = "Fornecedor cadastrado";
-            return RedirectToAction("Index", provider.ProviderId);
+            return RedirectToAction("Index", provider);
         }
 
         [HttpGet]

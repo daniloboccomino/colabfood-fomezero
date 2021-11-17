@@ -14,9 +14,9 @@ namespace globalsolution.fomezero.Controllers
             _charityRepository = charityRepository;
         }
 
-        public IActionResult Index(int id)
+        public IActionResult Index(Charity charity)
         {
-            return View(_charityRepository.FindById(id));
+            return View(_charityRepository.FindById(charity.CharityId));
         }
 
         [HttpGet]
@@ -31,7 +31,7 @@ namespace globalsolution.fomezero.Controllers
             _charityRepository.Create(charity);
             _charityRepository.Save();
             TempData["msg"] = "ONG cadastrada";
-            return RedirectToAction("Index", charity.CharityId);
+            return RedirectToAction("Index", charity);
         }
 
         [HttpGet]
