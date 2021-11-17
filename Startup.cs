@@ -35,6 +35,9 @@ namespace globalsolution.fomezero
 
             // Configure Repositories dependency injection
             services.AddScoped<IAdvertisingRepository, AdvertisingRepository>();
+            services.AddScoped<ICharityRepository, CharityRepository>();
+            services.AddScoped<IDonationRepository, DonationRepository>();
+            services.AddScoped<IProviderRepository, ProviderRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
