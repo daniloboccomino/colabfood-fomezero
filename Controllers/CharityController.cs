@@ -16,6 +16,18 @@ namespace globalsolution.fomezero.Controllers
         }
 
         [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Create(Charity charity)
+        {
+            return RedirectToAction("Index");
+        }
+
+        [HttpGet]
         public IActionResult Edit()
         {
             return View();

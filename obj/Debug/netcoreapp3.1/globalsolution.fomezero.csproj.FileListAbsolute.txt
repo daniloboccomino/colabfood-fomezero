@@ -368,3 +368,6 @@
 /Users/daniloboccomino/Desktop/FIAP85473/2TDSA/enterpriseApplication/ws.net/br.com.fiap.ead/globalsolution.fomezero/obj/Debug/netcoreapp3.1/Razor/Views/Charity/_Form.cshtml.g.cs
 /Users/daniloboccomino/Desktop/FIAP85473/2TDSA/enterpriseApplication/ws.net/br.com.fiap.ead/globalsolution.fomezero/obj/Debug/netcoreapp3.1/Razor/Views/Donation/Index.cshtml.g.cs
 /Users/daniloboccomino/Desktop/FIAP85473/2TDSA/enterpriseApplication/ws.net/br.com.fiap.ead/globalsolution.fomezero/obj/Debug/netcoreapp3.1/Razor/Views/Advertising/Details.cshtml.g.cs
+/Users/daniloboccomino/Desktop/FIAP85473/2TDSA/enterpriseApplication/ws.net/br.com.fiap.ead/globalsolution.fomezero/obj/Debug/netcoreapp3.1/Razor/Views/Advertising/Edit.cshtml.g.cs
+/Users/daniloboccomino/Desktop/FIAP85473/2TDSA/enterpriseApplication/ws.net/br.com.fiap.ead/globalsolution.fomezero/obj/Debug/netcoreapp3.1/Razor/Views/Advertising/_Form.cshtml.g.cs
+/Users/daniloboccomino/Desktop/FIAP85473/2TDSA/enterpriseApplication/ws.net/br.com.fiap.ead/globalsolution.fomezero/obj/Debug/netcoreapp3.1/Razor/Views/Provider/Create.cshtml.g.cs

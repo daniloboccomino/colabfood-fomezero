@@ -19,24 +19,28 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">
+                            <a class="nav-link" asp-controller="Home" asp-action="Index">
                                 <img src="~/img/icons/home.svg" width="14" height="22" class="d-inline-block align-top" /> Home
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Advertising" asp-action="Create">
+                            <a class="nav-link" asp-controller="Advertising" asp-action="Create">
                                 <img src="~/img/icons/new-document.svg" width="17" height="23" class="d-inline-block align-top" /> Novo Anúncio
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Donation" asp-action="Index">
+                            <a class="nav-link" asp-controller="Donation" asp-action="Index">
                                 <img src="~/img/icons/list.svg" width="13" height="23" class="d-inline-block align-top" /> Doações
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Provider" asp-action="Index">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <img src="~/img/icons/user.svg" width="13" height="22" class="d-inline-block align-top" /> Perfil
                             </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" asp-controller="Provider" asp-action="Create">Cadastrar Fornecedor</a>
+                                <a class="dropdown-item" asp-controller="Charity" asp-action="Create">Cadastrar ONG</a>
+                            </div>
                         </li>
                     </ul>
                 </div>

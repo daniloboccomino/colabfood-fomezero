@@ -1,4 +1,4 @@
-﻿@model Charity
+﻿@model Provider
 
 @{
     ViewData["Title"] = "Perfil";
@@ -7,10 +7,9 @@
 <div class="card mb-3" style="max-width: 30rem;">
     <h4 class="card-header">Dados de Cadastro</h4>
     <div class="card-body">
-        <form asp-action="">
-            <input asp-for="CharityId" />
+        <form asp-action="Create">
             <partial name="_Form" />
-            <input type="submit" value="Salvar" class="btn btn-primary mt-4 mb-1" />
+            <input type="submit" value="Cadastrar" class="btn btn-primary mt-4 mb-1" />
         </form>
     </div>
 </div>

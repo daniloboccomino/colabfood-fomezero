@@ -8,7 +8,39 @@
     <h4 class="card-header">Dados de Cadastro</h4>
     <div class="card-body">
         <form asp-action="">
-            <partial name="_Form" />
+            <input asp-for="CharityId" />
+            <div class="form-group mt-4">
+                <label asp-for="Document"></label>
+                <input asp-for="Document" class="form-control-plaintext" readonly value="" />
+            </div>
+            <div class="form-group mt-4">
+                <label asp-for="Name"></label>
+                <input asp-for="Name" class="form-control-plaintext" readonly value="" />
+            </div>
+            <div class="form-group mt-4">
+                <label asp-for="Email"></label>
+                <input asp-for="Email" class="form-control-plaintext" readonly value="" />
+            </div>
+            <div class="form-group mt-4">
+                <label asp-for="Phone"></label>
+                <input asp-for="Phone" class="form-control-plaintext" readonly value="" />
+            </div>
+            <div class="form-group mt-4">
+                <label asp-for="Address"></label>
+                <input asp-for="Address" class="form-control-plaintext" readonly value="" />
+            </div>
+            <div class="form-group mt-4">
+                <label asp-for="City"></label>
+                <input asp-for="City" class="form-control-plaintext" readonly value="" />
+            </div>
+            <div class="form-group mt-4">
+                <label asp-for="UF"></label>
+                <input asp-for="UF" class="form-control-plaintext" readonly value="" />
+            </div>
+            <div class="form-group mt-4 mb-1">
+                <label asp-for="Country"></label>
+                <input asp-for="Country" class="form-control-plaintext" readonly value="" />
+            </div>
         </form>
     </div>
 </div>
