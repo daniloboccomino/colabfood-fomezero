@@ -6,12 +6,13 @@
     <title>@ViewData["Title"] - Colab Food</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/style.css" />
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-5">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Colab Food</a>
+                <a class="navbar-brand colab-logo" asp-area="" asp-controller="Advertising" asp-action="Index">Colab Food</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -19,22 +20,22 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link" asp-controller="Home" asp-action="Index">
+                            <a class="nav-link colab-menu" asp-controller="Advertising" asp-action="Index">
                                 <img src="~/img/icons/home.svg" width="14" height="22" class="d-inline-block align-top" /> Home
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-controller="Advertising" asp-action="Create">
+                            <a class="nav-link colab-menu" asp-controller="Advertising" asp-action="Create">
                                 <img src="~/img/icons/new-document.svg" width="17" height="23" class="d-inline-block align-top" /> Novo Anúncio
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-controller="Donation" asp-action="Index">
+                            <a class="nav-link colab-menu" asp-controller="Donation" asp-action="Index">
                                 <img src="~/img/icons/list.svg" width="13" height="23" class="d-inline-block align-top" /> Doações
                             </a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle colab-menu" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <img src="~/img/icons/user.svg" width="13" height="22" class="d-inline-block align-top" /> Perfil
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">

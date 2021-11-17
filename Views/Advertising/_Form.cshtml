@@ -1,20 +1,20 @@
 ﻿@model Advertising
 
 <div class="form-group mt-4">
-    <label asp-for="Title"></label>
+    <label asp-for="Title" class="user-label"></label>
     <input asp-for="Title" class="form-control" />
 </div>
 <div class="form-group mt-4">
-    <label asp-for="Provider"></label>
+    <label asp-for="Provider" class="user-label"></label>
     <select asp-for="ProviderId" class="form-control">
         <option disabled selected>Selecione</option>
     </select>
 </div>
 <div class="form-group mt-4">
-    <label asp-for="Description"></label>
+    <label asp-for="Description" class="user-label"></label>
     <textarea asp-for="Description" class="form-control"></textarea>
 </div>
 <div class="form-group mt-4 mb-1">
-    <label asp-for="Quantity"></label>
+    <label asp-for="Quantity" class="user-label"></label>
     <input asp-for="Quantity" class="form-control" />
 </div>
