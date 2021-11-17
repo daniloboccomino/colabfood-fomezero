@@ -35,5 +35,11 @@
     <Folder Include="Views\Charity\" />
     <Folder Include="Views\Donation\" />
     <Folder Include="TagHelpers\" />
+    <Folder Include="wwwroot\img\" />
+    <Folder Include="wwwroot\img\icons\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\img\" />
+    <Content Remove="wwwroot\img\icons\" />
   </ItemGroup>
 </Project>
