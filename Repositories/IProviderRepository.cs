@@ -11,5 +11,6 @@ namespace globalsolution.fomezero.Repositories
         void Update(Provider advertising);
         void Delete(int id);
         void Save();
+        Provider FindById(int id);
     }
 }

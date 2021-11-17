@@ -1,18 +1,22 @@
 ﻿using System;
 using globalsolution.fomezero.Models;
+using globalsolution.fomezero.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
 namespace globalsolution.fomezero.Controllers
 {
     public class CharityController : Controller
     {
-        public CharityController()
+        private ICharityRepository _charityRepository;
+
+        public CharityController(ICharityRepository charityRepository)
         {
+            _charityRepository = charityRepository;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(int id)
         {
-            return View();
+            return View(_charityRepository.FindById(id));
         }
 
         [HttpGet]
@@ -24,19 +28,22 @@ namespace globalsolution.fomezero.Controllers
         [HttpPost]
         public IActionResult Create(Charity charity)
         {
-            return RedirectToAction("Index");
+            _charityRepository.Create(charity);
+            _charityRepository.Save();
+            TempData["msg"] = "ONG cadastrada";
+            return RedirectToAction("Index", charity.CharityId);
         }
 
         [HttpGet]
-        public IActionResult Edit()
+        public IActionResult Edit(int id)
         {
-            return View();
+            return View(_charityRepository.FindById(id));
         }
 
         [HttpPost]
         public IActionResult Edit(Charity charity)
         {
-            return RedirectToAction("Index");
+            return RedirectToAction("Index", charity.CharityId);
         }
     }
 }

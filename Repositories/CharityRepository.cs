@@ -39,5 +39,10 @@ namespace globalsolution.fomezero.Repositories
         {
             _context.SaveChanges();
         }
+
+        public Charity FindById(int id)
+        {
+            return _context.Charities.Where(a => a.CharityId == id).FirstOrDefault();
+        }
     }
 }

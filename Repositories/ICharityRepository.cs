@@ -11,5 +11,6 @@ namespace globalsolution.fomezero.Repositories
         void Update(Charity advertising);
         void Delete(int id);
         void Save();
+        Charity FindById(int id);
     }
 }

@@ -39,5 +39,10 @@ namespace globalsolution.fomezero.Repositories
         {
             _context.SaveChanges();
         }
+
+        public Provider FindById(int id)
+        {
+            return _context.Providers.Where(a => a.ProviderId == id).FirstOrDefault();
+        }
     }
 }
