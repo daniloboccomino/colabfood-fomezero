@@ -1453,7 +1453,7 @@
       "outputPath": "/Users/daniloboccomino/Desktop/FIAP85473/2TDSA/enterpriseApplication/ws.net/br.com.fiap.ead/globalsolution.fomezero/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/daniloboccomino/.nuget/NuGet/NuGet.Config"
+        "/Users/daniloboccomino/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
