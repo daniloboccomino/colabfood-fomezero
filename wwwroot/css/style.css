@@ -27,3 +27,14 @@
     font-weight: 500;
     margin-bottom: 30px;
 }
+
+.form-withdraw .form-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.form-withdraw .form-control {
+    width: 90px;
+}

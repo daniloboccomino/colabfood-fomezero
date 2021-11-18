@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using globalsolution.fomezero.Models;
 
 namespace globalsolution.fomezero.Repositories
@@ -11,5 +12,7 @@ namespace globalsolution.fomezero.Repositories
         void Update(Advertising advertising);
         void Delete(int id);
         void Save();
+        Advertising FindById(int id);
+        List<Advertising> SearchBy(Expression<Func<Advertising, bool>> filtro);
     }
 }
