@@ -4,6 +4,12 @@
 Aplicação de comunicação entre um produtor ou estabelecimento comercial e uma ONG ou alguma instituição beneficente. Esse fornecedor anuncia que poderá doar certa quantidade de alimento e disponibiliza para essas instituições.
 
 Um fornecedor cria um anúncio que notifica as intituições. A instituição tem a possibilidade de pegar os alimentos integralmente ou parcialmente. Quando uma instituição aceita a doação, o fornecdor recebe o nome da instituição e quais alimentos essa instituição vai pegar.
+### **INTEGRANTES**
+Beatriz Kül Rezende - RM85607
+Danilo Maia Boccomino - RM85473
+Giovanna Caroline Adorno - RM85542
+Gustavo Henrique Garrido de Melo – RM85136
+Gustavo Malvone - RM83448
 
 &nbsp;
 
@@ -15,7 +21,7 @@ Com isso, teremos uma tela onde será registrado todas os anúncios que a instit
 Na tela de Perfil será possível conferir os dados cadastrados, sendo possível também editar os dados caso seja necessário.
 &nbsp;
 #### **O LAYOUT**
-![Layout base da aplicação Colab Food](/web_lay-out_gs.png)
+![Layout base da aplicação Colab Food](/wwwroot/img/web_lay-out_gs.png)
 
 &nbsp;
 
@@ -30,6 +36,8 @@ Na tela de Perfil será possível conferir os dados cadastrados, sendo possível
 
   &nbsp;
   Junto do anúncio terá um campo seletor para escolher a instituição que está fazendo a retirada e o botão de Retirar, que abrirá um modal para informar a quantidade que deseja retirar e confirmar. Caso o usuário informe uma quantidade menor que a disponível, o anúncio será atualizado para a nova quantidade restante. Se o usuário informar a quantidade total disponível, o anúncio será removido do sistema. Caso o usuário informe uma quantidade maior do que a disponível, o sistema informará que a quantidade não está disponível.
+  &nbsp;
+  Na página Home também é possível pesquisar um anúncio por um determinado filtro, escolhendo o tipo do filtro - entre Cidade ou Fornecedor - e digitando o valor a ser pesquisar no campo de busca. O sistema retornará apenas os anúncios que tiverem essas propriedades.
 
 &nbsp;
 - ### **NOVO ANÚNCIO**
