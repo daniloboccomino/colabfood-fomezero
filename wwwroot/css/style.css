@@ -31,6 +31,10 @@
     border-top-left-radius: 0 !important;
 }
 
+.card-provider-name {
+    font-size: 1.2rem;
+}
+
 .user-label {
     color: #aaa;
     font-size: 1rem;
