@@ -56,3 +56,12 @@
 .form-withdraw .form-control {
     width: 90px;
 }
+
+.title-doc, .sub-item-doc {
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.p-doc {
+    margin-bottom: 4rem;
+}
