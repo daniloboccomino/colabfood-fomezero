@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using globalsolution.fomezero.Models;
 using globalsolution.fomezero.Repositories;
 using Microsoft.AspNetCore.Mvc;
@@ -19,9 +20,23 @@ namespace globalsolution.fomezero.Controllers
             _charityRepository = charityRepository;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(string filterType, string filter)
         {
-            var advertisings = _advertisingRepository.List();
+            var advertisings = new List<Advertising>();
+            if (filterType == "Cidade")
+            {
+                advertisings = _advertisingRepository
+                    .SearchBy(a => a.Provider.City.Contains(filter) || filter == null);
+            }
+            else if (filterType == "Fornecedor")
+            {
+                advertisings = _advertisingRepository
+                    .SearchBy(a => a.Provider.Name.Contains(filter) || filter == null);
+            }
+            else
+            {
+                advertisings = _advertisingRepository.List();
+            }
             return View(advertisings);
         }
 

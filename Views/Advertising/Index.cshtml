@@ -17,18 +17,26 @@
                 <p>Encontre a sua doação</p>
             </div>
             <div class="col p-3">
-                <select class="form-control mr-2" name="especieBusca">
+                <select class="form-control mr-2" name="filterType">
                     <option disabled selected>Selecione</option>
                     <option>Fornecedor</option>
                     <option>Cidade</option>
                 </select>
             </div>
         </div>
-        <div class="col-6 p-3">
-            <input type="text" class="form-control" placeholder="Pesquisar">
+        <div class="d-flex justify-content-between col-md-6 p-3">
+            <input type="text" name="filter" class="form-control input-search" placeholder="Pesquisar">
+            <button type="submit" class="btn btn-search">
+                <img src="~/img/icons/search.svg" width="17" height="23" class="d-inline-block align-top colab-menu" />
+            </button>
         </div>
     </form>
 </div>
+
+@if (Model.Count == 0)
+{
+    <message text="Nenhum registro encontrado" class="alert alert-danger"></message>
+}
 
 <div class="d-flex flex-wrap justify-content-between">
     @foreach (var item in Model)

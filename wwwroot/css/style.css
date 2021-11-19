@@ -17,6 +17,20 @@
     font-weight: 700;
 }
 
+.input-search {
+    border-right: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.btn-search {
+    border-color: rgba(0,0,0,.1);
+    border-radius: 0.25rem !important;
+    border-left: 0;
+    border-bottom-left-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+}
+
 .user-label {
     color: #aaa;
     font-size: 1rem;
